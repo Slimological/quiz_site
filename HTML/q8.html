@@ -1,0 +1,70 @@
+<!DOCTYPE html >
+<html lang="en">
+	<head>
+		<meta charset ="UTF-8">
+		<title>Question 8</title>
+		<link rel="stylesheet" href="../css.css">
+	</head>
+	<body>
+		<!-- This is the navigation bar-->
+		<div id="navbar">
+			<ul>
+				<li><a href="q7.html">Previous</a></li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="q1.html">Question 1</a></li>
+				<li><a href="q2.html">Question 2</a></li>
+				<li><a href="q3.html">Question 3</a></li>
+				<li><a href="q4.html">Question 4</a></li>
+				<li><a href="q5.html">Question 5</a></li>
+				<li><a href="q6.html">Question 6</a></li>
+				<li><a href="q7.html">Question 7</a></li>
+				<li><a href="q8.html"><strong>Question 8</strong></a></li>
+				<li><a href="q9.html">Question 9</a></li>
+				<li><a href="q10.html">Question 10</a></li>
+				<li><a href="results.html">Results</a></li>
+				<li><a href="q9.html">Next</a></li>
+			</ul>
+		</div>
+		<div id="question_bar">
+			<p>"What is the name of a Zebra crossed with a Donkey?"</p>
+		</div>
+		<div class="middle_container">
+			<!--This is going to be where the additional information is going-->
+			<div id="info_bar">
+				<div id = "points">
+					<p>Points</p>
+					<p id = "point_count">(X)/10</p>
+				</div>
+				<div id= "timer">
+					<p>Timer</p>
+					<p id = "timerNo">(X) seconds</p>
+				</div>
+			</div>
+			<!--This is going to be the middle of the page where the answers are going to go-->
+			<div id="answers">
+				<input type="radio" value = "Zonkey" name="q8">
+				<p>Zonkey</p>
+				<br>
+				<input type="radio" value = "Donka" name="q8">
+				<p>Donka</p>
+				<br>
+				<input type="radio" value = "Zebrey" name="q8">
+				<p>Zebrey</p>
+				<br>
+				<input type="radio" value = "Debra" name="q8">
+				<p>Debra</p>
+				<br>
+				<input type="submit" value="Submit" onclick="check_answer();">
+			</div>
+			<!-- This is where additional information goes on the right hand side of the page-->
+			<div id="beauty_panel">
+				<p>Only on this page does the footer change colour when clicked.</p>
+			</div>
+		</div>
+		<!--This footer is special becuase when it is clicked it'll turn red-->
+		<div id = "footer" name = "special_footer" onclick="footer_col();">
+			<p>Credits go to Emils Sivijs, 2022</p>
+		</div>
+		<script src = "../script.js"></script>
+	</body>
+</html>

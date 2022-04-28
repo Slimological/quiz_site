@@ -1,0 +1,257 @@
+/*---------------Universal Styling---------------*/
+
+/*This is used universally to set a font style for the whole document.*/
+* {
+
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+/*---------------Navigation Styling---------------*/
+
+/*This is the main navigation bar styling*/
+#navbar {
+
+	display: flex;
+	background-color: rgb(200, 200, 200);
+	padding-top: 2.5px;
+	padding-bottom: 2.5px;
+	justify-content: space-around;
+	flex-shrink: 1;
+
+}
+
+/*This is additional styling inside the navigation bar*/
+#navbar li {
+
+	text-decoration: none;
+	list-style-type: none;
+	display: inline-flex;
+	padding: 8px;
+
+}
+
+/*---------------Body Styling---------------*/
+
+body {
+
+	background-color: white;
+
+}
+
+/*This is the styling for the greeting box on the homepage*/
+
+#greeting {
+
+	display: block;
+	text-align: center;
+	background-color: rgb(200, 200, 200);
+	width: 50%;
+	margin: auto;
+
+}
+
+/*This is the quiz begin button styling*/
+
+#quiz_button {
+
+	text-align: center;
+
+}
+
+#quiz_button>button {
+
+	height: 70px;
+	width: 150px;
+	font-size: 16pt;
+
+}
+
+/*This is the styling for the checkboxes*/
+
+#checkboxes {
+
+	text-align: center;
+
+}
+
+#checkboxes>p {
+
+	display: inline;
+	padding: 5px;
+
+}
+
+/*This is used to enlarge the buttons*/
+.enlarged {
+
+	width: 25px;
+	height: 25px;
+
+}
+
+/*---------------Question Page Body Styling---------------*/
+/*The majority of flex styling syntax is due to: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+
+#question_bar {
+
+	background-color: rgb(200, 200, 200);
+	height: 50px;
+	margin-top: 2.5px;
+	margin-bottom: 7.5px;
+
+}
+
+#question_bar>p {
+
+	display: block;
+	text-align: center;
+	padding: 15px;
+
+}
+
+/*This is used to easily style the main body of the question page by using flex*/
+
+.middle_container,
+#sub {
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	flex-shrink: 1, 2, 3;
+
+}
+
+/*This is where the info regarding time and points is styled*/
+#info_bar {
+
+	background-color: rgb(200, 200, 200);
+	padding: 20px;
+	margin-top: 7.5px;
+	margin-bottom: 2.5px;
+	width: max-content;
+	height: 100%
+}
+
+/*Point styling section*/
+#info_bar>#points {
+
+	display: block;
+	text-align: center;
+	background-color: white;
+	padding: 5px;
+	margin-bottom: 15px;
+
+}
+
+/*Timer styling section*/
+#info_bar>#timer {
+
+	display: block;
+	text-align: center;
+	background-color: white;
+	padding: 5px;
+
+}
+
+/*Styles for the answer element*/
+#answers,
+#image_submit {
+
+	display: inline;
+	width: 200px;
+
+}
+
+/*Styles for the answer element for images*/
+#answersIMG,
+#sub {
+
+	display: inline-flex;
+
+}
+
+/*This is the image styling*/
+
+#answersIMG>img,
+#result_bar>p>img {
+
+	display: inline-flex;
+	width: 200px;
+	height: 200px;
+	justify-content: center;
+
+}
+
+
+/*This is used to style the answers buttons*/
+#answers>p {
+
+	display: inline-flex;
+	padding: 5px;
+
+}
+
+/*This is where additional info or photos go to keep the page symmetrical, also some submit button additions.*/
+#beauty_panel,
+sub {
+
+	text-align: center;
+	background-color: rgb(200, 200, 200);
+	padding: 5px;
+	max-width: 200px;
+
+}
+
+/*Text styling in the beauty panel*/
+#beauty_panel>p {
+
+	display: block;
+	text-align: center;
+	background-color: white;
+	padding: 5px;
+	margin-bottom: 15px;
+
+}
+
+/*Submit button styling*/
+#sub {
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+
+/*The footer styling section, it is set to be at the bottom of the page*/
+#footer {
+
+	position: static;
+	width: 100%;
+	bottom: 0;
+}
+
+/*Additional text styling in the footer*/
+#footer>p {
+
+	background-color: rgb(200, 200, 200);
+	padding: 20px;
+	text-align: center;
+
+}
+
+/*---------------Results Page Body Styling---------------*/
+
+#result_bar {
+
+	display: block;
+	background-color: rgb(200, 200, 200);
+
+}
+
+#result_bar>p {
+
+	display: block;
+	text-align: left;
+	padding: 15px;
+
+}

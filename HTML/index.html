@@ -1,0 +1,48 @@
+<!DOCTYPE html >
+<html lang="en">
+	<head>
+		<meta charset ="UTF-8">
+		<title>Homepage</title>
+		<link rel="stylesheet" href="../css.css">
+	</head>
+	<body>
+		<!-- This is the navigation bar-->
+		<div id="navbar">
+			<ul>
+				<li><a href="results.html">Previous</a></li>
+				<li><a href="index.html"><strong>Home</strong></a></li>
+				<li><a href="q1.html">Question 1</a></li>
+				<li><a href="q2.html">Question 2</a></li>
+				<li><a href="q3.html">Question 3</a></li>
+				<li><a href="q4.html">Question 4</a></li>
+				<li><a href="q5.html">Question 5</a></li>
+				<li><a href="q6.html">Question 6</a></li>
+				<li><a href="q7.html">Question 7</a></li>
+				<li><a href="q8.html">Question 8</a></li>
+				<li><a href="q9.html">Question 9</a></li>
+				<li><a href="q10.html">Question 10</a></li>
+				<li><a href="results.html">Results</a></li>
+				<li><a href="q1.html">Next</a></li>
+			</ul>
+		</div>
+		<div id="greeting">
+			<p><span>Hello and welcome to the general knowledge quiz!<br>
+				Select 'Begin Quiz' below to start!<br>
+				</span>
+			</p>
+		</div>
+		<!--A now deprecated attempt but I was going to dual function call here before: https://stackoverflow.com/questions/16025138/call-two-functions-from-same-onclick-->
+		<div id="quiz_button" onclick = "start_quiz();"><button>Begin Quiz</button>
+		</div>
+		<div id="greeting">
+			<p><span>Please bear in mind, to reset the quiz please select the 'Begin Quiz' button as it resets the quiz for another try.<br>
+				Once the timer runs out you will be constantly redirected to the end until you come back to the start to retry.<br>
+				</span>
+			</p>
+		</div>
+		<div id = "footer">
+			<p>Credits go to Emils Sivijs, 2022</p>
+		</div>
+		<script src = "../script.js"></script>
+	</body>
+</html>
